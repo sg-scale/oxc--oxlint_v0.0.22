@@ -167,7 +167,7 @@ jobs:
           done
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v3
         with:
           name: oxlint v${{ needs.build.outputs.version }}
           draft: true
