@@ -28,10 +28,10 @@ jobs:
           - 'microsoft/vscode'
           - 'DefinitelyTyped/DefinitelyTyped'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Clone VSCode Repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: ${{ matrix.repository }}}
           path: ./e2e
