@@ -120,7 +120,7 @@ jobs:
         run: pnpm exec vsce package -o "../../oxc_vscode-${{ matrix.code-target }}.vsix" --target ${{ matrix.code-target }}
 
       - name: Upload VSCode extension artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: packages-${{ matrix.code-target }}
           path: ./oxc_vscode-${{ matrix.code-target }}.vsix
